@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Pribadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>WEBSITE PRIBADI</h1>
+    <p>Tugas Pengantar Teknologi Informasi</p>
+</header>
+
+<nav class="navbar">
+    <a href="#beranda">Beranda</a>
+    <a href="#profil">Profil</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+<section class="section" id="beranda">
+    <div class="card">
+        <h2>Selamat Datang</h2>
+        <p>Ini adalah website pribadi saya.</p>
+    </div>
+</section>
+
+<section class="section" id="profil">
+    <div class="card">
+        <h2>Profil Saya</h2>
+        <p><b>Nama:</b> Gyska Savesprina Marbun</p>
+        <p><b>NIM:</b> (25110081)</p>
+        <p><b>Jurusan:</b> (Teknik Komputer)</p>
+        <p><b>Kampus:</b> (Poloteknik Bisnis Indonesia)</p>
+    </div>
+</section>
+
+<section class="section" id="pendidikan">
+    <div class="card">
+        <h2>Riwayat Pendidikan</h2>
+        <ul>
+            <li>SD : (SDN 124389)</li>
+            <li>SMP : (SMPN 5 Pematangsiantar)</li>
+            <li>SMA : (SMA Negeri 1 Kota Pematangsiantar)</li>
+            <li>Perguruan Tinggi : (Politeknik Bisnis Indonesia)</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section" id="kontak">
+    <div class="card">
+        <h2>Kontak</h2>
+        <p>Email : gyskasavesprinamarbun2022@email.com</p>
+        <p>No HP : 083144213473</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Website Pribadi</p>
+</footer>
+
+</body>
+</html>
