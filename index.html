@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Pribadi | Gyska Savesprina Marbun</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Gyska Savesprina Marbun</h2>
+    <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<div class="slider">
+<!-- HERO -->
+<section class="slide active">
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Website Pribadi</h1>
+        <p>
+            "Selamat datang di website pribadi saya - tempat belajar,
+            berkembang, dan mengenal perjalanan saya di dunia teknologi."
+            Website ini dibuat untuk tugas Pengantar Teknologi Informasi.
+        </p>
+        <a href="#profil" class="btn">Kenali Saya</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="img/foto-saya.jpg" alt="Foto Gyska">
+    </div>
+</section>
+
+
+<!-- PROFIL -->>
+<section class="/slide">
+<section class="section" id="profil">
+    <div class="img-box">
+        <img src="img/foto-saya.jpg" alt="Foto Gyska">
+    </div>
+    <div class="text-box">
+        <h2>Profil Saya</h2>
+        <p><b>Nama : </b> Gyska Savesprina Marbun</p>
+        <p><b>T/T/L : </b> Tangerang, 13 April 2007</p>
+        <p><b>Alamat  : </b> Jl. Parsoburan, Gg Asam, Kel. Suka Makmur, Kec. Siantar Marihat, Kota Pematangsiantar</p>
+        <p><b>Agama : </b> Kristen Protestan</p>
+        <p><b>Status : </b> Mahasiswi</p>
+        <p><b>Kuliah : </b> Politeknik Bisnis Indonesia Kota Pematangsiantar</p>
+        <p><b>Asal Sekolah : </b> SMA Negeri 1 Kota Pematangsiantar</p>
+        <p><b>NIM : </b> 25110081</p>
+        <p><b>Jurusan : </b> Teknik Komputer</p>
+    </div>
+</section>
+
+<!-- PENDIDIKAN -->
+<section class="/slide">
+<section class="education" id="pendidikan">
+    <h2>Pendidikan</h2>
+
+    <div class="timeline">
+
+        <div class="edu-card">
+            <span class="icon">🏫</span>
+            <h3>Sekolah Dasar</h3>
+            <p>SD Negeri 124389 Kota Pematangsiantar</p>
+            <small>2011 – 2019</small>
+        </div>
+
+        <div class="edu-card">
+            <span class="icon">🏫</span>
+            <h3>Sekolah Menengah Pertama</h3>
+            <p>SMP Negeri 5 Kota Pematangsiantar</p>
+            <small>2019 – 2022</small>
+        </div>
+
+        <div class="edu-card">
+            <span class="icon">🎓</span>
+            <h3>Sekolah Menengah Atas</h3>
+            <p>SMA Negeri 1 Kota Pematangsiantar</p>
+            <small>2022 – 2025</small>
+        </div>
+
+        <div class="edu-card highlight">
+            <span class="icon">💻</span>
+            <h3>Perguruan Tinggi Swasta</h3>
+            <p>Politeknik Bisnis Indonesia Kota Pematangsiantar</p>
+            <p>Teknik Komputer</p>
+            <small>2025 – Sekarang</small>
+        </div>
+    </div>
+</section>
+
+
+<!-- KONTAK -->
+<section class="/slide">
+<section class="section" id="kontak">
+    <div class="text-box">
+        <h2>Kontak : 083144213473</h2>
+        <p>Email : gyskasavesprinamarbun2022@email.com</p>
+        <p>Instagram : gys_svspn_2  </p>
+    </div>
+    <div class="img-box">
+        <img src="img/foto-saya.jpg" alt="Foto Gyska">
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Gyska Savesprina Marbun</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.edu-card');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 });
+
+cards.forEach(card => {
+    observer.observe(card);
+});
+</script>
+
+</body>
+</html>

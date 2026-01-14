@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff3eb;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #c76b6b;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    max-width: 420px;
+}
+
+.btn {
+    background: #d15b5b;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #cf5a5a;
+    transform: translateY(-3px);
+}
+
+/* IMAGE */
+.hero-img img,
+.img-box img {
+    width: 300px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 30px;
+    background: #f3b6b6;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-img img:hover,
+.img-box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* SECTION */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 60px;
+    animation: fadeUp 1.2s ease forwards;
+}
+
+/* CARDS */
+.cards {
+    text-align: center;
+    padding: 80px 40px;
+    animation: fadeUp 1.2s ease forwards;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card.active {
+    background: #d97b7b;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+/* ANIMASI */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+/* ===== PENDIDIKAN (KOTAK & SEJAJAR) ===== */
+.education {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.education h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+}
+
+/* GRID agar sejajar */
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kotak sejajar */
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* KOTAK */
+.edu-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+
+    /* bikin tinggi sejajar */
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ikon */
+.icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* highlight kuliah */
+.edu-card.highlight {
+    background: #d97b7b;
+    color: white;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 900px) {
+    .timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+}
+
